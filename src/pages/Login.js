@@ -1,7 +1,7 @@
 import "./formulario_login.css";
 //import axios from 'axios';
 import {useState} from "react"
-import waru1 from "../assets/img/waru1.png";
+import waru1 from "../assets/waru1.png";
 //import Dashboard from './Dashboard.js';
 //import { Link } from 'react-router-dom';
 

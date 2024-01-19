@@ -1,7 +1,7 @@
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import './Header.css';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import waru3 from '../assets/img/waru3.png';
+import waru3 from '../assets/waru3.png';
 
 function HeaderDash() {
 

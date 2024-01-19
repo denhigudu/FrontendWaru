@@ -3,7 +3,7 @@ import axios from 'axios';
 import {useState} from "react"
 import "./SignUp.css";
 import Button from "../components/button"
-import waru1 from "../assets/img/waru1.png";
+import waru1 from "../assets/waru1.png";
 //import waru1 from "./assets/img/waru1.png";
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { useNavigate } from "react-router-dom";
