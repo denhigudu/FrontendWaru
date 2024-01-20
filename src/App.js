@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 // Material UI
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import SendIcon from "@mui/icons-material/Send";
 
 function App() {
   const navigate = useNavigate();
@@ -36,17 +37,31 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <br />
       <form onSubmit={sign_in}>
-        <Stack spacing={2} direction={"row"}>
-          <Button variant="contained" className="button" type="submit" color="primary">
+        <Stack spacing={2} direction={"row-reverse"}>
+          <Button
+            variant="contained"
+            className="button"
+            type="submit"
+            endIcon={<SendIcon />}
+          >
             Registrate
           </Button>
         </Stack>
       </form>
+      <br />
       <form onClick={log_in}>
-        <button className="button" type="Click">
-          Login
-        </button>
+        <Stack spacing={2} direction={"row-reverse"}>
+          <Button
+            variant="contained"
+            className="button"
+            type="submit"
+            endIcon={<SendIcon />}
+          >
+            Login
+          </Button>
+        </Stack>
       </form>
       {error && <p>{error}</p>}
     </div>
