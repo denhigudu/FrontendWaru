@@ -6,6 +6,7 @@ import './App.css';
 import GoogleForm from './components/GoogleForm';
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Button } from 'antd';
 //import './Dashboard';
 //import { useState } from 'react';
 
@@ -19,7 +20,7 @@ function App( ) {
     const sign_in = async (event) => {
       event.preventDefault();
       try {
-        navigate("/ASignin");
+        navigate("/SignUp");
       } catch (error) {
         setError("Algo salio mal");
       }
@@ -37,22 +38,25 @@ function App( ) {
 
   return (
     <div className="App">
+      
      
      
     
       <Header/>
-      <FormularioLogin/> 
+        <form onSubmit={sign_in}>
+          <button className='button' type='submit'>ingresar</button>
+      {/* <FormularioLogin/>  */}
       <FormularioSignUp/>
-      <GoogleForm/>
-      <HeaderDash/>
+      {/* <GoogleForm/>
+      <HeaderDash/> */}
       {/* <Formulario_signup/> */}
       
 
     
     
 
-      
-      </div>
+      </form>
+    </div>
   );
 
 }
