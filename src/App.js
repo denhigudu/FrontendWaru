@@ -1,62 +1,56 @@
-import { FormularioLogin } from './pages/Login';
-import { FormularioSignUp } from './pages/SignUp';
-import Header from './layouts/Header';
-import HeaderDash from './layouts/HeaderDash';
-import './App.css';
-import GoogleForm from './components/GoogleForm';
+import React from "react";
+import Header from "./layouts/Header";
+import "./App.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-//import './Dashboard';
-//import { useState } from 'react';
 
+// Material UI
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 
-function App( ) {
-    const navigate = useNavigate();
-    // VARIABLES
-    const [error, setError] = useState("");
+function App() {
+  const navigate = useNavigate();
 
-    // FUNCIONES
-    const sign_in = async (event) => {
-      event.preventDefault();
-      try {
-        navigate("/ASignin");
-      } catch (error) {
-        setError("Algo salio mal");
-      }
-    };
+  // VARIABLES
+  const [error, setError] = useState("");
 
-    const log_in = async (event) => {
-      event.preventDefault();
-      try {
-        navigate("/ALogin");
-      } catch (error) {
-        setError("Algo salio mal");
-      }
+  // FUNCIONES
+  const sign_in = async (event) => {
+    event.preventDefault();
+    try {
+      navigate("/SignUp");
+    } catch (error) {
+      setError("Algo salio mal");
     }
+  };
 
+  const log_in = async (event) => {
+    event.preventDefault();
+    try {
+      navigate("/Login");
+    } catch (error) {
+      setError("Algo salio mal");
+    }
+  };
 
   return (
     <div className="App">
-     
-     
-    
-      <Header/>
-      <FormularioLogin/> 
-      <FormularioSignUp/>
-      <GoogleForm/>
-      <HeaderDash/>
-      {/* <Formulario_signup/> */}
-      
-
-    
-    
-
-      
-      </div>
+      <Header />
+      <form onSubmit={sign_in}>
+        <Stack spacing={2} direction={"row"}>
+          <Button variant="contained" className="button" type="submit" color="primary">
+            Registrate
+          </Button>
+        </Stack>
+      </form>
+      <form onClick={log_in}>
+        <button className="button" type="Click">
+          Login
+        </button>
+      </form>
+      {error && <p>{error}</p>}
+    </div>
   );
-
 }
-     
-  
 
 export default App;
