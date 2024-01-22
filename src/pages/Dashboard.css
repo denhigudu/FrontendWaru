@@ -1,0 +1,14 @@
+.perfil {
+  display: inline-flex;
+  align-items: left;
+  border-width: 10px;
+  border-color: #ff5c04;
+  padding: 10px;
+}
+
+.button {
+  background-color: #ff5c04;
+  color: #040b5e;
+  font-family: "Avenir", sans-serif;
+  margin-right: 10px;
+}

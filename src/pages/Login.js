@@ -1,17 +1,35 @@
 import "./formulario_login.css";
-//import axios from 'axios';
 import { useState } from "react";
 import waru1 from "../assets/waru1.png";
 //import Dashboard from './Dashboard.js';
 //import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export function FormularioLogin() {
-  const [email, setEmail] = useState("");
+  const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  const login = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:3001/api/login", {
+        mail,
+        password,
+      });
+      if (response.data.success === true) {
+        console.log(response.data);
+        navigate("/Dashboard");
+      } else {
+        console.log(response.data);
+        console.log("no ingresaste");
+      }
+    } catch (error) {
+      setError("Log in equivocado");
+    }
+  };
   //const history = useHistory(); // Obtenemos el objeto history
 
   // const handleLogin = () => {
@@ -57,7 +75,7 @@ export function FormularioLogin() {
           padding: "10px",
         }}
       >
-        <form>
+        <form onSubmit={login}>
           <div
             style={{
               display: "flex",
@@ -102,8 +120,8 @@ export function FormularioLogin() {
             <input
               type="text"
               placeholder="Ingresa tu email"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
+              value={mail}
+              onChange={(event) => setMail(event.target.value)}
               style={{
                 marginTop: "10px",
                 width: "70%",
@@ -149,6 +167,7 @@ export function FormularioLogin() {
               }}
             />
           </label>
+          {/* que significa el asterico en la ref */}
           <a
             href="#"
             style={{
@@ -160,12 +179,10 @@ export function FormularioLogin() {
           >
             ¿Olvidaste tu contraseña?
           </a>
-
           <br></br>
           <br></br>
           <br></br>
           <br></br>
-
           <button
             /*onClick={handleLogin*/
             style={{
@@ -181,11 +198,8 @@ export function FormularioLogin() {
           >
             Iniciar sesión
           </button>
-
           <br></br>
           <br></br>
-
-          {/* <img src={waru1}/> */}
         </form>
       </div>
 

@@ -2,7 +2,6 @@ import "./formulario_login.css";
 import axios from "axios";
 import { useState } from "react";
 import "./SignUp.css";
-import Button from "../components/button";
 import waru1 from "../assets/waru1.png";
 //import waru1 from "./assets/img/waru1.png";
 import { useNavigate } from "react-router-dom";
@@ -63,9 +62,7 @@ export function FormularioSignUp() {
             <h1 className="title">SIGN UP</h1>
             <img className="logo" src={waru1} alt="Logotipo de Waru" />
           </div>
-
           <div className="formulario" />
-
           <label className="user">
             Nombre de Usuario:
             <br></br>
@@ -73,13 +70,12 @@ export function FormularioSignUp() {
               className="input"
               type="text"
               placeholder="Ingresa tu nombre de Usuario"
-              value={String}
+              value={username}
               onChange={(event) => setUsername(event.target.value)}
             />
           </label>
           <br></br>
           <br></br>
-
           <label className="email">
             Email:
             <br></br>
@@ -104,26 +100,9 @@ export function FormularioSignUp() {
               onChange={(event) => setPassword(event.target.value)}
             />
           </label>
-          <br></br>
-          <br></br>
-          {/* <label>
-                    Confirma tu contraseña:
-                    <br></br>
-                    <br></br>
-                        <input 
-                            type="password"
-                            placeholder= "Ingresa tu contraseña"
-                            value={password}
-                            onChange={(event)=>setPassword(event.target.value)}
-                        />
-                    
-                </label>
-                <br></br>
-                <br></br> */}
-
-          {/* <Button variant="contained">Contained</Button> */}
-          <Button />
-          {/* <img src={waru1}/> */}
+          <button className="button" type="submit">
+            Ingresar
+          </button>
         </form>
       </div>
       {/* Eliminar este button de brincar cuando funcione react con backend */}
