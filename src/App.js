@@ -33,14 +33,7 @@ function App() {
         setError("Algo salio mal");
       };
     }
-    const dashboard = async (event) => {
-      event.preventDefault();
-      try {
-        navigate("/Dashboard");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };;
+   
 
   return (
     <div className="App">
@@ -71,6 +64,7 @@ function App() {
           </Button>
         </Stack>
       </form>
+    
       {error && <p>{error}</p>}
     </div>
   );
