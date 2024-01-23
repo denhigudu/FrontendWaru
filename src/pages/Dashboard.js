@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./Dashboard.css"
+import HeaderDash from '../layouts/HeaderDash';
+import Leftsidebar from '../components/Leftsidebar';
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -90,7 +92,11 @@ function Dashboard() {
 
   return (
     <div>
-      <h1>Dashboard</h1>
+    <div>
+      <HeaderDash/>
+      <Leftsidebar/>
+    </div>
+      
       <div className="perfil">
         <form onClick={Notificaciones}>
           <button className="button">Ir a notificaciones</button>
@@ -121,6 +127,7 @@ function Dashboard() {
         <button>Cerrar sesión</button>
       </form>
       {error && <p>{error}</p>}
+    
     </div>
   );
 }
