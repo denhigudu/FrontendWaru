@@ -32,8 +32,16 @@ function App( ) {
         navigate("/ALogin");
       } catch (error) {
         setError("Algo salio mal");
-      }
+      };
     }
+    const dashboard = async (event) => {
+      event.preventDefault();
+      try {
+        navigate("/Dashboard");
+      } catch (error) {
+        setError("Algo salio mal");
+      }
+    };
 
 
   return (
@@ -44,7 +52,14 @@ function App( ) {
     
       <Header/>
         <form onSubmit={sign_in}>
-          <button className='button' type='submit'>ingresar</button>
+          <button className='button' type='submit'>registro</button>
+        </form>
+        <form onSubmit={log_in}>
+          <button className='button' type='submit'>ingreso</button>
+        </form>
+        <form onSubmit={dashboard}>
+          <button className='button' type='submit'>dash</button>
+        </form>
       {/* <FormularioLogin/>  */}
       <FormularioSignUp/>
       {/* <GoogleForm/>
@@ -55,7 +70,7 @@ function App( ) {
     
     
 
-      </form>
+      
     </div>
   );
 
