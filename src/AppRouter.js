@@ -12,7 +12,8 @@ import MisNegocios from "./pages/misNegocios";
 import NuevoProyecto from "./pages/nuevoProyecto";
 import Servicios from "./pages/servicios";
 import Ajustes from "./pages/ajustes";
-import NuevaContrasena from "./pages/nuevaContrasena";
+import CorreoContrasena from "./pages/correoContrasena";
+import CambioContrasena from "./pages/cambioContrasena";
 
 const AppRouter = () => {
   return (
@@ -30,7 +31,8 @@ const AppRouter = () => {
         <Route path="/nuevoproyecto" element={<NuevoProyecto />} />
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/ajustes" element={<Ajustes />} />
-        <Route path="/nuevaContrasena" element={<NuevaContrasena />} />
+        <Route path="/correoContrasena" element={<CorreoContrasena />} />
+        <Route path="/cambioContrasena" element={<CambioContrasena />} />
       </Routes>
     </Router>
   );

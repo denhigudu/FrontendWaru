@@ -1,9 +1,9 @@
 import "./formulario_login.css";
-import { useState } from "react";
 import waru1 from "../assets/waru1.png";
 //import Dashboard from './Dashboard.js';
 //import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import axios from "axios";
 
 export function FormularioLogin() {
@@ -51,6 +51,15 @@ export function FormularioLogin() {
   // };
 
   // eliminar esta función verificando que funcione con backend
+  const lostpassword = async (event) => {
+    event.preventDefault();
+    try {
+      navigate("/nuevaContrasena");
+    } catch (error) {
+      setError("Algo salio mal");
+    }
+  };
+
   const brincar = async (event) => {
     event.preventDefault();
     try {
@@ -59,7 +68,7 @@ export function FormularioLogin() {
       setError("Algo salio mal");
     }
   };
-  // -----------------------------------------------------------
+
   return (
     <section>
       <br></br>
@@ -167,22 +176,12 @@ export function FormularioLogin() {
               }}
             />
           </label>
-          {/* que significa el asterico en la ref */}
-          <a
-            href="#"
-            style={{
-              color: "#040B5E",
-              fontFamily: "Avenir, sans-serif",
-              fontSize: "13px",
-              marginRight: "-150px",
-            }}
-          >
-            ¿Olvidaste tu contraseña?
-          </a>
+          <form onClick={lostpassword}>
+            <button>¿Olvidaste tu contraseña?</button>
+          </form>
           <br></br>
           <br></br>
-          <br></br>
-          <br></br>
+
           <button
             /*onClick={handleLogin*/
             style={{
