@@ -5,6 +5,7 @@ import waru1 from "../assets/waru1.png";
 //import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Header from "../layouts/Header";
 
 export function FormularioLogin() {
   const [mail, setMail] = useState("");
@@ -61,7 +62,9 @@ export function FormularioLogin() {
   };
   // -----------------------------------------------------------
   return (
+    <div className="App">
     <section>
+      <Header/>
       <br></br>
       <br></br>
       <div
@@ -209,6 +212,7 @@ export function FormularioLogin() {
       </form>
       {error && <p>{error}</p>}
     </section>
+    </div>
   );
 }
 

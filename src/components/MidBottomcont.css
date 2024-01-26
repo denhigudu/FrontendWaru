@@ -1,0 +1,67 @@
+.midbotcont{
+    display: inline-flex;
+    align-items: right;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-width: 2px;
+    border-style: solid; 
+    border-color: transparent; 
+    border-radius: 10px;
+    padding: 10px;
+    width: 750px;
+    height: 350px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mis-pedidos{
+    text-align: left;
+    padding-bottom: 10px;
+    margin-left: 70px;
+    width: 270px;
+    color: #040B5E;
+    font-family: Avenir, sans-serif;  
+    font-size: x-large;    
+}
+
+.lineaserv{
+    position: absolute;
+    width: 86%;
+    height: 2px;
+    background-color: #FF5C04; 
+    margin-top: -3%; 
+    margin-left: 7%;
+}
+
+.servicio{
+    border-color:#ff5c04 !important;
+    color: #040B5E !important;
+    width: 580px;
+    margin-right: 10px;
+    margin-left: 90px  !important;
+    border-radius: 15px !important;
+  }
+  
+.serv-solicitados-arrow{
+    margin-left: 320px;
+}
+
+.serv-activos-arrow{
+    margin-left: 355px;
+}
+
+.serv-archivados-arrow{
+    margin-left: 325px;
+}
+
+
+.servicon{
+    color:#FF5C04;
+    position: absolute;
+    top: 44%; 
+    left: 8%; 
+    transform: translate(520%, -430%); 
+    font-size: 2em !important; 
+}

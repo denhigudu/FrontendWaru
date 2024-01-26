@@ -4,6 +4,11 @@ import { useState } from "react";
 import "./Dashboard.css"
 import HeaderDash from '../layouts/HeaderDash';
 import Leftsidebar from '../components/Leftsidebar';
+import Rightsidebar from '../components/Rightsidebar';
+import Footer from "../layouts/Footer";
+import Middletopcont from "../components/Middletopcont";
+import MidBottomcont from "../components/MidBottomcont";
+
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -95,8 +100,12 @@ function Dashboard() {
     <div>
       <HeaderDash/>
       <Leftsidebar/>
+      <Rightsidebar/>
+      <Middletopcont/>
+      <MidBottomcont/>
+      <Footer/>
     </div>
-      
+    
       <div className="perfil">
         <form onClick={Notificaciones}>
           <button className="button">Ir a notificaciones</button>
@@ -127,7 +136,7 @@ function Dashboard() {
         <button>Cerrar sesión</button>
       </form>
       {error && <p>{error}</p>}
-    
+      
     </div>
   );
 }

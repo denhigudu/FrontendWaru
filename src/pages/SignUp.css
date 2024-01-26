@@ -1,11 +1,12 @@
 .borde{
     display: inline-flex;
-    align-items:center;
+    align-items:right !important;
     border-width: 3px;
     border-style: solid; 
     border-color: #FF5C04; 
     border-radius: 10px;
     padding:10px;
+
 }
 
 .title{

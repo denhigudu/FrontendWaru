@@ -1,0 +1,12 @@
+.addbusiness-button{ 
+    background-color: #ff5c04;
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Avenir, sans-serif';
+    text-transform: capitalize;
+    font-size: 12px;
+    top: 92%;
+    text-align: end;
+    position: absolute;
+}
