@@ -54,7 +54,7 @@ export function FormularioLogin() {
   const lostpassword = async (event) => {
     event.preventDefault();
     try {
-      navigate("/nuevaContrasena");
+      navigate("/correoContrasena");
     } catch (error) {
       setError("Algo salio mal");
     }

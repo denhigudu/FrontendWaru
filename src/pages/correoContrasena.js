@@ -11,7 +11,7 @@ function CorreoContrasena() {
   const sendMail = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3001/api/sendmail", {
+      const response = await axios.post("http://localhost:3001/api/sendLink", {
         mail,
       });
       if (response.data.success === true) {
