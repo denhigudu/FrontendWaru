@@ -29,10 +29,11 @@ function App() {
     event.preventDefault();
     try {
       navigate("/Login");
-    } catch (error) {
-      setError("Algo salio mal");
+      } catch (error) {
+        setError("Algo salio mal");
+      };
     }
-  };
+   
 
   return (
     <div className="App">
@@ -63,6 +64,7 @@ function App() {
           </Button>
         </Stack>
       </form>
+    {/* hola soy denhi */}
       {error && <p>{error}</p>}
     </div>
   );
