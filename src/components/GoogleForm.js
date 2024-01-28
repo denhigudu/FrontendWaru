@@ -10,12 +10,12 @@ function GoogleForm() {
       
       <FloatButton className="FloatButton"
         icon={<FormOutlined/>}
-        description="Autodiagnóstico"
+        description="Nuevo Autodiagnóstico"
         onClick={() => setOpen(true)}
       />
 
       <Drawer
-        title="Autodiagóstico"
+        title="Autodiagnóstico"
         placement="right"
         onClose={() => setOpen(false)}
         open={open}

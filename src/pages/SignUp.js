@@ -5,6 +5,7 @@ import "./SignUp.css";
 import waru1 from "../assets/waru1.png";
 //import waru1 from "./assets/img/waru1.png";
 import { useNavigate } from "react-router-dom";
+import Header from "../layouts/Header";
 
 export function FormularioSignUp() {
   const navigate = useNavigate();
@@ -48,7 +49,9 @@ export function FormularioSignUp() {
   //todo lo que este arriba de return serán funciones a ejecutar
   //todo lo que este abajo de return sera lo que ve el usuario en su pantalla
   return (
+    <div className="App">
     <section>
+    <Header/>
       <br></br>
       <br></br>
       <div className="borde">
@@ -62,6 +65,7 @@ export function FormularioSignUp() {
             <h1 className="title">SIGN UP</h1>
             <img className="logo" src={waru1} alt="Logotipo de Waru" />
           </div>
+          <br></br>
           <div className="formulario" />
           <label className="user">
             Nombre de Usuario:
@@ -75,7 +79,7 @@ export function FormularioSignUp() {
             />
           </label>
           <br></br>
-          <br></br>
+          
           <label className="email">
             Email:
             <br></br>
@@ -88,7 +92,7 @@ export function FormularioSignUp() {
             />
           </label>
           <br></br>
-          <br></br>
+          
           <label className="password">
             Contraseña:
             <br></br>
@@ -100,17 +104,36 @@ export function FormularioSignUp() {
               onChange={(event) => setPassword(event.target.value)}
             />
           </label>
-          <button className="button" type="submit">
+          <button type="submit" style={{
+              backgroundColor: "#FF5C04",
+              color: "#ffff",
+              padding: "10px",
+              borderRadius: "20px",
+              border: "1px solid #ffff",
+              width: "70%",
+              fontSize: "16px",
+              fontFamily: "Black Avenir, sans-serif",
+              marginBottom: "30px",
+              marginTop: "16px",
+            }}>
             Ingresar
           </button>
+          {error && <p>{error}</p>}
         </form>
       </div>
+      
       {/* Eliminar este button de brincar cuando funcione react con backend */}
+      <br></br>
       <form onClick={brincar}>
+      <br></br>
+      <br></br>
         <button>Ir a Dashboard</button>
+      <br></br>
+      <br></br>
       </form>
-      {error && <p>{error}</p>}
+      
     </section>
+    </div>
   );
 }
 

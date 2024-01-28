@@ -51,11 +51,22 @@ export function FormularioLogin() {
   };
 
   return (
+    <div className="App">
     <section>
-      <Header />
-      <br />
-      <br />
-      <div className="container">
+      <Header/>
+      <br></br>
+      <br></br>
+      <div
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          borderWidth: "3px",
+          borderStyle: "solid",
+          borderColor: "#FF5C04",
+          borderRadius: "10px",
+          padding: "10px",
+        }}
+      >
         <form onSubmit={login}>
           <div className="div">
             <h1 className="h1">LOG IN</h1>
@@ -101,6 +112,7 @@ export function FormularioLogin() {
       <Footer />
       {error && <p>{error}</p>}
     </section>
+    </div>
   );
 }
 

@@ -1,10 +1,11 @@
 import React from "react";
-import Header from "./layouts/Header";
-import Footer from "./layouts/Footer";
+import IndexHeader from "./layouts/IndexHeader";
 import "./App.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import FormularioSignUp from "./pages/SignUp";
+import homewarú from "./assets/homewarú.png";
+import waruinfo from "./assets/waruinfo.png";
 // Material UI
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
@@ -38,8 +39,34 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <IndexHeader/>
       <br />
+      <img
+        src={homewarú}
+        style={{
+          marginTop: "2.8%",
+          width: "1440px",
+          height: "475px",
+          marginLeft: "-1px",
+          marginBottom: "30px",
+          
+        }}
+        alt="slogan warú"
+      />
+
+      <img
+        src={waruinfo}
+        style={{
+          marginTop: "0",
+          width: "1248px",
+          height: "720px",
+          marginLeft: "-1px",
+          marginBottom: "30px",
+          
+        }}
+        alt="waruinfo"
+      />
+
       <form onSubmit={sign_in}>
         <Stack spacing={2} direction={"row-reverse"}>
           <Button
@@ -48,7 +75,7 @@ function App() {
             type="submit"
             endIcon={<SendIcon />}
           >
-            Registrate
+            Registrarse
           </Button>
         </Stack>
       </form>
@@ -61,7 +88,7 @@ function App() {
             type="submit"
             endIcon={<SendIcon />}
           >
-            Login
+            Ingresar
           </Button>
         </Stack>
       </form>
