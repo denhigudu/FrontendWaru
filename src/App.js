@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./layouts/Header";
+import Footer from "./layouts/Footer";
 import "./App.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -64,7 +65,7 @@ function App() {
           </Button>
         </Stack>
       </form>
-    {/* hola soy denhi */}
+      <Footer/>
       {error && <p>{error}</p>}
     </div>
   );
