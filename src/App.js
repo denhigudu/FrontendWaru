@@ -1,55 +1,30 @@
 import React from "react";
 import IndexHeader from "./layouts/IndexHeader";
+//import Footer from "./layouts/Footer";
 import "./App.css";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import FormularioSignUp from "./pages/SignUp";
-import homewarú from "./assets/homewarú.png";
+import homewaru from "./assets/homewarú.png";
 import waruinfo from "./assets/waruinfo.png";
 // Material UI
-import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
-import SendIcon from "@mui/icons-material/Send";
 
 function App() {
-  const navigate = useNavigate();
-
   // VARIABLES
-  const [error, setError] = useState("");
+  const [error] = useState("");
 
   // FUNCIONES
-  const sign_in = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/SignUp");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
-
-  const log_in = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/Login");
-      } catch (error) {
-        setError("Algo salio mal");
-      };
-    }
-   
 
   return (
     <div className="App">
-      <IndexHeader/>
+      <IndexHeader />
       <br />
       <img
-        src={homewarú}
+        src={homewaru}
         style={{
           marginTop: "2.8%",
           width: "1440px",
           height: "475px",
           marginLeft: "-1px",
           marginBottom: "30px",
-          
         }}
         alt="slogan warú"
       />
@@ -62,37 +37,10 @@ function App() {
           height: "720px",
           marginLeft: "-1px",
           marginBottom: "30px",
-          
         }}
         alt="waruinfo"
       />
-
-      <form onSubmit={sign_in}>
-        <Stack spacing={2} direction={"row-reverse"}>
-          <Button
-            variant="contained"
-            className="button"
-            type="submit"
-            endIcon={<SendIcon />}
-          >
-            Registrarse
-          </Button>
-        </Stack>
-      </form>
-      <br />
-      <form onClick={log_in}>
-        <Stack spacing={2} direction={"row-reverse"}>
-          <Button
-            variant="contained"
-            className="button"
-            type="submit"
-            endIcon={<SendIcon />}
-          >
-            Ingresar
-          </Button>
-        </Stack>
-      </form>
-      <Footer/>
+      {/* <Footer /> */}
       {error && <p>{error}</p>}
     </div>
   );

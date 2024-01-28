@@ -1,111 +1,111 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./Dashboard.css"
 import HeaderDash from '../layouts/HeaderDash';
 import Leftsidebar from '../components/Leftsidebar';
 import Rightsidebar from '../components/Rightsidebar';
-import Footer from "../layouts/Footer";
+//import Footer from "../layouts/Footer";
 import Middletopcont from "../components/Middletopcont";
 import MidBottomcont from "../components/MidBottomcont";
 
 
 function Dashboard() {
-  const navigate = useNavigate();
-  const [error, setError] = useState("");
+  // const navigate = useNavigate();
+  const [error] = useState("");
 
-  const Notificaciones = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/notificaciones");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
+  // const Notificaciones = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     navigate("/notificaciones");
+  //   } catch (error) {
+  //     setError("Algo salio mal");
+  //   }
+  // };
 
-  const EditarPerfil = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/editarPerfil");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
+  // const EditarPerfil = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     navigate("/editarPerfil");
+  //   } catch (error) {
+  //     setError("Algo salio mal");
+  //   }
+  // };
 
-  const mensajes = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/mensajes");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
+  // const mensajes = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     navigate("/mensajes");
+  //   } catch (error) {
+  //     setError("Algo salio mal");
+  //   }
+  // };
 
-  const misNegocios = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/misnegocios");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
+  // const misNegocios = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     navigate("/misnegocios");
+  //   } catch (error) {
+  //     setError("Algo salio mal");
+  //   }
+  // };
 
-  const Autodiagnostico = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/autodiagnostico");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
+  // const Autodiagnostico = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     navigate("/autodiagnostico");
+  //   } catch (error) {
+  //     setError("Algo salio mal");
+  //   }
+  // };
 
-  const nuevoNegocio = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/nuevoproyecto");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
+  // const nuevoNegocio = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     navigate("/nuevoproyecto");
+  //   } catch (error) {
+  //     setError("Algo salio mal");
+  //   }
+  // };
 
-  const contratarServ = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/servicios");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
+  // const contratarServ = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     navigate("/servicios");
+  //   } catch (error) {
+  //     setError("Algo salio mal");
+  //   }
+  // };
 
-  const ajustes = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/ajustes");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
+  // const ajustes = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     navigate("/ajustes");
+  //   } catch (error) {
+  //     setError("Algo salio mal");
+  //   }
+  // };
 
-  const logOut = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
+  // const logOut = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     navigate("/");
+  //   } catch (error) {
+  //     setError("Algo salio mal");
+  //   }
+  // };
 
   return (
     <div>
-    <div>
-      <HeaderDash/>
-      <Leftsidebar/>
-      <Rightsidebar/>
-      <Middletopcont/>
-      <MidBottomcont/>
-      <Footer/>
-    </div>
-    
+      <div>
+        <HeaderDash/>
+        <Leftsidebar/>
+        <Rightsidebar/>
+        <Middletopcont/>
+        <MidBottomcont/>
+      {/* <Footer/> */}
+      </div>
+{/*     
       <div className="perfil">
         <form onClick={Notificaciones}>
           <button className="button">Ir a notificaciones</button>
@@ -134,9 +134,8 @@ function Dashboard() {
       </form>
       <form onClick={logOut}>
         <button>Cerrar sesión</button>
-      </form>
-      {error && <p>{error}</p>}
-      
+      </form> */}
+    {error && <p>{error}</p>}
     </div>
   );
 }
