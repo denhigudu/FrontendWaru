@@ -3,6 +3,9 @@ import React from "react";
 // import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "../layouts/Header";
+import "./login.css";
+import waru1 from "../assets/waru1.png";
 
 function CambioContrasena() {
   const navigate = useNavigate();
@@ -33,30 +36,52 @@ function CambioContrasena() {
   };
 
   return (
-    <div>
-      <h1>Nueva Contraseña: </h1>
-      <form onSubmit={newPassword}>
-        <input
-          type="text"
-          placeholder="nombre de usuario"
-          value={username}
-          onChange={(event) => setUsername(event.target.value)}
-        />
-      </form>
-      <form onSubmit={newPassword}>
-        <input
-          type="password"
-          placeholder="Nueva contraseña"
-          value={password}
-          onChange={(event) => setPassword(event.target.value)}
-        />
-      </form>
-      <form onSubmit={newPassword}>
-        <button className="button" type="onSubmit">
-          actualizar contraseña
-        </button>
-      </form>
-      {error && <p>{error}</p>}
+    <div className="App">
+      <Header />
+      <br />
+      <br />
+      <div
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          borderWidth: "3px",
+          borderStyle: "solid",
+          borderColor: "#FF5C04",
+          borderRadius: "10px",
+          padding: "10px",
+        }}
+      >
+        <div>
+          <img className="logo" src={waru1} alt="Logo de waru" />
+          <h1 className="letreros">Nueva Contraseña: </h1>
+          <form onSubmit={newPassword}>
+            <input
+              className="input"
+              type="text"
+              placeholder="nombre de usuario"
+              value={username}
+              onChange={(event) => setUsername(event.target.value)}
+            />
+          </form>
+          <br />
+          <form onSubmit={newPassword}>
+            <input
+              className="input"
+              type="password"
+              placeholder="Nueva contraseña"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+            />
+          </form>
+          <br />
+          <form onSubmit={newPassword}>
+            <button className="button01" type="onSubmit">
+              actualizar contraseña
+            </button>
+          </form>
+          {error && <p>{error}</p>}
+        </div>
+      </div>
     </div>
   );
 }

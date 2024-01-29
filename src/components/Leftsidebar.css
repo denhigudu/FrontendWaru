@@ -9,10 +9,16 @@
     border-radius: 10px;
     padding:10px;
     width: 300px;
-    height: 680px;
+    height: 750px;
     position: relative;
     top: 15px;
     left: 15px;
+}
+.button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 .profileicon{
@@ -74,7 +80,7 @@
     color: #ffffff;
     position: absolute;
     top: 45%; 
-    left: 50%; 
+    left: 46%; 
     transform: translate(-110%, -50%); 
     font-size: 2em !important; 
     
@@ -84,7 +90,7 @@
     color: #ffffff;
     position: absolute;
     top: 45%; 
-    left: 50%; 
+    left: 54%; 
     transform: translate(25%, -45%); 
     font-size: 1.7em !important; 
     
@@ -93,7 +99,7 @@
 .storeicon{
     color:#FF5C04;
     position: absolute;
-    top: 44%; 
+    top: 40%; 
     left: 16%; 
     transform: translate(80%, -45%); 
     font-size: 2em !important; 

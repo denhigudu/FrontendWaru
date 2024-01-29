@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import Header from "../layouts/Header";
-import Footer from "../layouts/Footer";
-import "./cambioContrasena";
+//import Footer from "../layouts/Footer";
+import "./login.css";
 import waru1 from "../assets/waru1.png";
 
 function CorreoContrasena() {
@@ -31,17 +31,31 @@ function CorreoContrasena() {
   };
 
   return (
-    <div>
+    <div className="App">
       <Header />
       <br />
       <br />
-      <div className="container">
+      <div
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          borderWidth: "3px",
+          borderStyle: "solid",
+          borderColor: "#FF5C04",
+          borderRadius: "10px",
+          padding: "10px",
+        }}
+      >
         <div>
           <img className="logo" src={waru1} alt="Logo de waru" />
-          <h1>¿Olvidaste tu contraseña?</h1>
+          <h1 className="letreros">¿Olvidaste tu contraseña?</h1>
           <br />
-          <p>Escribe tu dirección de correo electrónico para</p>
-          <p>enviar los datos de recuperación de contraseña.</p>
+          <p className="letreros">
+            Escribe tu dirección de correo electrónico para
+          </p>
+          <p className="letreros">
+            enviar los datos de recuperación de contraseña.
+          </p>
           <form onSubmit={sendMail}>
             <br />
             <br />
@@ -60,7 +74,7 @@ function CorreoContrasena() {
           </form>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
       {error && <p>{error}</p>}
     </div>
   );
