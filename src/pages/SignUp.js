@@ -37,14 +37,14 @@ export function FormularioSignUp() {
   };
 
   // eliminar esta función verificando que funcione con backend
-  const brincar = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/Dashboard");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
+  // const brincar = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     navigate("/Dashboard");
+  //   } catch (error) {
+  //     setError("Algo salio mal");
+  //   }
+  // };
   // -----------------------------------------------------------
 
   //todo lo que este arriba de return serán funciones a ejecutar
@@ -125,16 +125,14 @@ export function FormularioSignUp() {
             {error && <p>{error}</p>}
           </form>
         </div>
-
-        {/* Eliminar este button de brincar cuando funcione react con backend */}
         <br></br>
-        <form onClick={brincar}>
+        {/* <form onClick={brincar}>
           <br></br>
           <br></br>
           <button>Ir a Dashboard</button>
           <br></br>
           <br></br>
-        </form>
+        </form> */}
       </section>
       <Footer />
     </div>

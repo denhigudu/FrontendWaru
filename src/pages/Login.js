@@ -41,14 +41,14 @@ export function FormularioLogin() {
     }
   };
 
-  const brincar = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/Dashboard");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
+  // const brincar = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     navigate("/Dashboard");
+  //   } catch (error) {
+  //     setError("Algo salio mal");
+  //   }
+  // };
 
   return (
     <div className="App">
@@ -106,9 +106,9 @@ export function FormularioLogin() {
           </form>
         </div>
 
-        <form onClick={brincar}>
+        {/* <form onClick={brincar}>
           <button className="auxiliar2">Ir a Dashboard</button>
-        </form>
+        </form> */}
       </section>
       <Footer />
       {error && <p>{error}</p>}
