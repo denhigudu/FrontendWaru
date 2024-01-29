@@ -1,6 +1,5 @@
 import React from "react";
 import IndexHeader from "./layouts/IndexHeader";
-//import Footer from "./layouts/Footer";
 import "./App.css";
 import { useState } from "react";
 import homewaru from "./assets/homewarú.png";
@@ -40,7 +39,6 @@ function App() {
         }}
         alt="waruinfo"
       />
-      {/* <Footer /> */}
       {error && <p>{error}</p>}
     </div>
   );

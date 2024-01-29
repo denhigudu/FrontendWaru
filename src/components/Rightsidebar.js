@@ -30,7 +30,7 @@ const Rightsidebar = () => {
     }
   };
 
-  const ajustes = async (event) => {
+  const Ajustes = async (event) => {
     event.preventDefault();
     try {
       Navigate("/ajustes");
@@ -39,7 +39,7 @@ const Rightsidebar = () => {
     }
   };
 
-  const logOut = async (event) => {
+  const LogOut = async (event) => {
     event.preventDefault();
     try {
       Navigate("/");
@@ -87,12 +87,12 @@ const Rightsidebar = () => {
             Proveedores
           </Button>
           <div>
-            <button className="button" onClick={ajustes}>
+            <button className="button" onClick={Ajustes}>
               <SettingsIcon className="settings-icon" />
             </button>
             <h4 className="ajustes">Ajustes</h4>
 
-            <button className="button" onClick={logOut}>
+            <button className="button" onClick={LogOut}>
               <LogoutIcon className="log-out" />
             </button>
             <h4 className="cerrar-sesion">Cerrar sesión</h4>

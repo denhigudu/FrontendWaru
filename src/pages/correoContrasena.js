@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import Header from "../layouts/Header";
-//import Footer from "../layouts/Footer";
+import Footer from "../layouts/Footer";
 import "./login.css";
 import waru1 from "../assets/waru1.png";
 
@@ -74,7 +74,7 @@ function CorreoContrasena() {
           </form>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
       {error && <p>{error}</p>}
     </div>
   );

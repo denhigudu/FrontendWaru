@@ -23,6 +23,7 @@ function Footer() {
               <a href="#">
                 <img src={whats} alt="WhatsApp" />
               </a>
+
             </div>
           </div>
         </div>

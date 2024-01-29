@@ -4,6 +4,7 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../layouts/Header";
+import Footer from "../layouts/Footer";
 import "./login.css";
 import waru1 from "../assets/waru1.png";
 
@@ -79,9 +80,10 @@ function CambioContrasena() {
               actualizar contraseña
             </button>
           </form>
-          {error && <p>{error}</p>}
         </div>
       </div>
+      <Footer/>
+      {error && <p>{error}</p>}
     </div>
   );
 }

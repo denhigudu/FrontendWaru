@@ -4,7 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import "./login.css";
 import Header from "../layouts/Header";
-// import Footer from "../layouts/Footer";
+import Footer from "../layouts/Footer";
 
 export function FormularioLogin() {
   const [mail, setMail] = useState("");
@@ -109,9 +109,9 @@ export function FormularioLogin() {
         <form onClick={brincar}>
           <button className="auxiliar2">Ir a Dashboard</button>
         </form>
-        {/* <Footer /> */}
-        {error && <p>{error}</p>}
       </section>
+      <Footer />
+      {error && <p>{error}</p>}
     </div>
   );
 }
