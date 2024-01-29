@@ -8,7 +8,7 @@ import Footer from "../layouts/Footer";
 import "./login.css";
 import waru1 from "../assets/waru1.png";
 
-function CambioContrasena() {
+function NewPassword() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -88,4 +88,4 @@ function CambioContrasena() {
   );
 }
 
-export default CambioContrasena;
+export default NewPassword;

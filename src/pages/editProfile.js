@@ -1,6 +1,6 @@
 import React from "react";
 
-function editarPerfil() {
+function EditProfile() {
   return (
     <div>
       <h1>editar perfil</h1>
@@ -8,4 +8,4 @@ function editarPerfil() {
   );
 }
 
-export default editarPerfil;
+export default  EditProfile;

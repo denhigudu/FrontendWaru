@@ -1,6 +1,6 @@
 import React from "react";
 
-function Proveedores() {
+function Suppliers() {
   return (
     <div>
       <h1>Proveedores</h1>
@@ -8,4 +8,4 @@ function Proveedores() {
   );
 }
 
-export default Proveedores;
+export default Suppliers;

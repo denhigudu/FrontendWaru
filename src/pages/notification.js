@@ -1,6 +1,6 @@
 import React from "react";
 
-function notificaciones() {
+function Notifications() {
   return (
     <div>
       <h1>Notificaciones</h1>
@@ -8,4 +8,4 @@ function notificaciones() {
   );
 }
 
-export default notificaciones;
+export default Notifications;

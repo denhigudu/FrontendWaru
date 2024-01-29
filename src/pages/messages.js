@@ -1,6 +1,6 @@
 import React from "react";
 
-function mensajes() {
+function messages() {
   return (
     <div>
       <h1>Mensajes</h1>
@@ -8,4 +8,4 @@ function mensajes() {
   );
 }
 
-export default mensajes;
+export default messages;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Leftsidebar.css";
 import AddBusinessButton from "./AddBusiness";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+//import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import CircleNotificationsIcon from "@mui/icons-material/CircleNotifications";
 import EditIcon from "@mui/icons-material/Edit";
 import CircleIcon from "@mui/icons-material/Circle";
@@ -19,40 +19,40 @@ import { useState } from "react";
 const Leftsidebar = () => {
   const Navigate = useNavigate();
   const [Error, setError] = useState("");
-  // funciones
-  const EditarPerfil = async (event) => {
+  // functions
+  const EditProfile = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/editarPerfil");
+      Navigate("/editProfile");
     } catch (error) {
-      setError("Algo salio mal");
+      setError("something is wrong");
     }
   };
 
-  const Notificaciones = async (event) => {
+  const Notification = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/notificaciones");
+      Navigate("/notification");
     } catch (error) {
-      setError("Algo salio mal");
+      setError("something is wrong");
     }
   };
 
-  const Mensajes = async (event) => {
+  const Messages = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/mensajes");
+      Navigate("/messages");
     } catch (error) {
-      setError("Algo salio mal");
+      setError("something is wrong");
     }
   };
 
-  const NuevoNegocio = async (event) => {
+  const NewProject = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/nuevoproyecto");
+      Navigate("/newProject");
     } catch (error) {
-      setError("Algo salio mal");
+      setError("something is wrong");
     }
   };
 
@@ -66,9 +66,9 @@ const Leftsidebar = () => {
           <img className="foto-de-perfil" src={persona} alt="Foto de perfil" />
         </div>
         {/* figuras de perfil, mi negocio y titulos */}
-        <button onClick={EditarPerfil} className="button">
+        {/* <button onClick={EditarPerfil} className="button">
           <AccountCircleOutlinedIcon className="profileicon" />
-        </button>
+        </button> */}
         <br />
         <StoreIcon className="storeicon" />
         <br />
@@ -80,18 +80,18 @@ const Leftsidebar = () => {
         <div className="icon-container">
           <div className="noticon-container">
             {" "}
-            <button onClick={Notificaciones} className="button">
+            <button onClick={Notification} className="button">
               <CircleNotificationsIcon className="noticon" />
             </button>
           </div>
           <div className="circleicon-container">
-            <button className="button" onClick={EditarPerfil}>
+            <button className="button" onClick={EditProfile}>
               <CircleIcon className="circleicon" />
               <EditIcon className="editicon" />
             </button>
           </div>
           <div className="circleicon-container">
-            <button className="button" onClick={Mensajes}>
+            <button className="button" onClick={Messages}>
               <CircleIcon className="circleicon" />
               <ChatBubbleIcon className="chaticon" />
             </button>
@@ -108,7 +108,7 @@ const Leftsidebar = () => {
               width: "150px",
               height: "130px",
               position: "absolute",
-              top: "60%",
+              top: "50%",
               right: "25%",
             }}
           />
@@ -116,7 +116,7 @@ const Leftsidebar = () => {
             style={{
               position: "absolute",
               right: "10%",
-              top: "68%",
+              top: "58%",
               transform: "translateY(-50%)",
             }}
           />
@@ -130,7 +130,7 @@ const Leftsidebar = () => {
               width: "150px",
               height: "130px",
               position: "absolute",
-              top: "75%",
+              top: "70%",
               right: "25%",
             }}
           />
@@ -138,12 +138,12 @@ const Leftsidebar = () => {
             style={{
               position: "absolute",
               right: "10%",
-              top: "85%",
+              top: "80%",
               transform: "translateY(-50%)",
             }}
           />
         </div>
-        <button className="button" onClick={NuevoNegocio}>
+        <button className="button" onClick={NewProject}>
           <AddBusinessButton />
         </button>
       </div>

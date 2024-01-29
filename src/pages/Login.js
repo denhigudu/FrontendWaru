@@ -6,7 +6,7 @@ import "./login.css";
 import Header from "../layouts/Header";
 import Footer from "../layouts/Footer";
 
-export function FormularioLogin() {
+export function Login() {
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -24,10 +24,10 @@ export function FormularioLogin() {
         navigate("/Dashboard");
       } else {
         console.log(response.data);
-        console.log("no ingresaste");
+        console.log("log In failed");
       }
     } catch (error) {
-      setError("Log in equivocado");
+      setError("Log in failed");
     }
   };
 
@@ -35,9 +35,9 @@ export function FormularioLogin() {
   const lostpassword = async (event) => {
     event.preventDefault();
     try {
-      navigate("/correoContrasena");
+      navigate("/mailPassword");
     } catch (error) {
-      setError("Algo salio mal");
+      setError("something is wrong");
     }
   };
 
@@ -116,4 +116,4 @@ export function FormularioLogin() {
   );
 }
 
-export default FormularioLogin;
+export default Login;

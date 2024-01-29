@@ -1,122 +1,119 @@
-.bordesbar{
-    display: inline-flex;
-    align-items:center;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-width: 2px;
-    border-style: solid; 
-    border-color: #FF5C04; 
-    border-radius: 10px;
-    padding:10px;
-    width: 300px;
-    height: 750px;
-    position: relative;
-    top: 15px;
-    left: 15px;
+.bordesbar {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ff5c04;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 750px;
+  position: relative;
+  top: 15px;
+  left: 15px;
 }
-.button{
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-.profileicon{
-    text-align: center;
-    font-size: 7em!important;
-    margin-top: 20px;
-    padding-top: 0px;
-    color: #FF5C04;
+.button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
-.username{
-    text-align: center;
-    margin: 0;
-    color: #040B5E;
-    font-family: 'Avenir', sans-serif;
+.profileicon {
+  text-align: center;
+  font-size: 7em !important;
+  margin-top: 20px;
+  padding-top: 0px;
+  color: #ff5c04;
 }
 
-.linea{
-    width: 108%;
-    height: 1.5px;
-    background-color: #FF5C04; 
-    margin-top: 10%; 
+.username {
+  text-align: center;
+  margin: 0;
+  color: #040b5e;
+  font-family: "Avenir", sans-serif;
+}
+
+.linea {
+  width: 108%;
+  height: 1.5px;
+  background-color: #ff5c04;
+  margin-top: 10%;
 }
 
 .container {
-    display: flex;
-    margin-left: 0%;
-    
+  display: flex;
+  margin-left: 0%;
 }
-.icon-container { 
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
-    margin-bottom: -20px; 
-    margin-top: 0px;
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: -20px;
+  margin-top: 0px;
 }
 
-.noticon{
-    color: #040B5E ;
-    font-size: 2em !important;
-    
+.noticon {
+  color: #040b5e;
+  font-size: 2em !important;
 }
 
 .circleicon-container {
-    position: relative;
-    display: inline-block; 
+  position: relative;
+  display: inline-block;
 }
 
-.circleicon, .editicon {
-    font-size: 2em !important;
-    margin-left: 40px;
+.circleicon,
+.editicon {
+  font-size: 2em !important;
+  margin-left: 40px;
 }
 
 .circleicon {
-    color: #040B5E;
+  color: #040b5e;
 }
 
 .editicon {
-    color: #ffffff;
-    position: absolute;
-    top: 45%; 
-    left: 46%; 
-    transform: translate(-110%, -50%); 
-    font-size: 1.4em !important; 
-    
+  color: #ffffff;
+  position: absolute;
+  top: 45%;
+  left: 46%;
+  transform: translate(-110%, -50%);
+  font-size: 1.4em !important;
 }
 
-.chaticon{
-    color: #ffffff;
-    position: absolute;
-    top: 45%; 
-    left: 54%; 
-    transform: translate(25%, -45%); 
-    font-size: 1.7em !important; 
-    
+.chaticon {
+  color: #ffffff;
+  position: absolute;
+  top: 45%;
+  left: 54%;
+  transform: translate(25%, -45%);
+  font-size: 1.7em !important;
 }
 
-.storeicon{
-    color:#FF5C04;
-    position: absolute;
-    top: 40%; 
-    left: 16%; 
-    transform: translate(80%, -45%); 
-    font-size: 2em !important; 
+.storeicon {
+  color: #ff5c04;
+  position: absolute;
+  top: 45%;
+  left: 16%;
+  transform: translate(80%, -45%);
+  font-size: 2em !important;
 }
 
-.mis-negocios{
-    text-align: center;
-    margin-top: 92%;
-    margin-left: 12%;
-    color: #040B5E;
-    font-family: 'Avenir', sans-serif;
-    position: absolute;
+.mis-negocios {
+  text-align: center;
+  margin-top: 103%;
+  margin-left: 12%;
+  color: #040b5e;
+  font-family: "Avenir", sans-serif;
+  position: absolute;
 }
 
 .foto-de-perfil {
-    width: 120px; /* Ajusta el ancho según sea necesario */
-    height: 120px; /* Ajusta la altura según sea necesario */
-    border-radius: 50%; /* Hace que la foto sea circular */
-    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el círculo */
-  }
+  width: 120px; /* Ajusta el ancho según sea necesario */
+  height: 120px; /* Ajusta la altura según sea necesario */
+  border-radius: 50%; /* Hace que la foto sea circular */
+  object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el círculo */
+}

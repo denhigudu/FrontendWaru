@@ -12,28 +12,28 @@ const Rightsidebar = () => {
   const Navigate = useNavigate();
   const [Error, setError] = useState("");
 
-  const ContratarServ = async (event) => {
+  const services = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/servicios");
+      Navigate("/services");
     } catch (error) {
       setError("Algo salio mal");
     }
   };
 
-  const Proveedores = async (event) => {
+  const Suppliers = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/proveedores");
+      Navigate("/suppliers");
     } catch (error) {
       setError("Algo salio mal");
     }
   };
 
-  const Ajustes = async (event) => {
+  const Configurations = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/ajustes");
+      Navigate("/configurations");
     } catch (error) {
       setError("Algo salio mal");
     }
@@ -72,7 +72,7 @@ const Rightsidebar = () => {
             variant="outlined"
             className="servicios"
             endIcon={<ArrowForwardIosIcon className="serforward-arrow" />}
-            onClick={ContratarServ}
+            onClick={services}
           >
             Servicios
           </Button>
@@ -82,12 +82,12 @@ const Rightsidebar = () => {
             variant="outlined"
             className="proveedores"
             endIcon={<ArrowForwardIosIcon className="provforward-arrow" />}
-            onClick={Proveedores}
+            onClick={Suppliers}
           >
             Proveedores
           </Button>
           <div>
-            <button className="button" onClick={Ajustes}>
+            <button className="button" onClick={Configurations}>
               <SettingsIcon className="settings-icon" />
             </button>
             <h4 className="ajustes">Ajustes</h4>

@@ -1,6 +1,6 @@
 import React from "react";
 
-function ajustes() {
+function Configuration() {
   return (
     <div>
       <h1>Configuración y ajustes</h1>
@@ -8,4 +8,4 @@ function ajustes() {
   );
 }
 
-export default ajustes;
+export default Configuration;

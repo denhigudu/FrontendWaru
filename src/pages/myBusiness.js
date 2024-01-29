@@ -1,6 +1,6 @@
 import React from "react";
 
-function misNegocios() {
+function myBusiness() {
   return (
     <div>
       <h1>mis Negocios</h1>
@@ -8,4 +8,4 @@ function misNegocios() {
   );
 }
 
-export default misNegocios;
+export default myBusiness;

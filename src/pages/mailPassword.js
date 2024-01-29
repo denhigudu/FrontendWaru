@@ -7,7 +7,7 @@ import Footer from "../layouts/Footer";
 import "./login.css";
 import waru1 from "../assets/waru1.png";
 
-function CorreoContrasena() {
+function MailPassword() {
   const [mail, setMail] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
@@ -80,4 +80,4 @@ function CorreoContrasena() {
   );
 }
 
-export default CorreoContrasena;
+export default MailPassword;
