@@ -40,7 +40,7 @@
     width: 108%;
     height: 1.5px;
     background-color: #FF5C04; 
-    margin-top: 12%; 
+    margin-top: 10%; 
 }
 
 .container {
@@ -58,7 +58,7 @@
 
 .noticon{
     color: #040B5E ;
-    font-size: 3em !important;
+    font-size: 2em !important;
     
 }
 
@@ -68,7 +68,7 @@
 }
 
 .circleicon, .editicon {
-    font-size: 3em !important;
+    font-size: 2em !important;
     margin-left: 40px;
 }
 
@@ -82,7 +82,7 @@
     top: 45%; 
     left: 46%; 
     transform: translate(-110%, -50%); 
-    font-size: 2em !important; 
+    font-size: 1.4em !important; 
     
 }
 
@@ -107,7 +107,7 @@
 
 .mis-negocios{
     text-align: center;
-    margin-top: 90%;
+    margin-top: 92%;
     margin-left: 12%;
     color: #040B5E;
     font-family: 'Avenir', sans-serif;

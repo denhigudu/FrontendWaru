@@ -18,7 +18,7 @@
   .socialmedia1 {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Alinea verticalmente en el centro */
+    align-items: center; 
     width: 100%;
   }
   .rc {
@@ -40,6 +40,6 @@
     text-align: left;
   }
   img {
-    width: 30px; /* Ajusta el ancho de las imágenes según sea necesario */
-    margin: 0 5px; /* Ajusta el margen entre las imágenes */
+    width: 30px; 
+    margin: 0 5px; 
   }

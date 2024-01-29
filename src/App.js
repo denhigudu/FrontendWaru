@@ -4,6 +4,7 @@ import "./App.css";
 import { useState } from "react";
 import homewaru from "./assets/homewarú.png";
 import waruinfo from "./assets/waruinfo.png";
+import nombre_waru from "./assets/nombre_waru.png";
 // Material UI
 
 function App() {
@@ -33,6 +34,17 @@ function App() {
         style={{
           marginTop: "0",
           width: "1248px",
+          height: "720px",
+          marginLeft: "-1px",
+          marginBottom: "30px",
+        }}
+        alt="waruinfo"
+      />
+      <img
+        src={nombre_waru}
+        style={{
+          marginTop: "0",
+          width: "1448px",
           height: "720px",
           marginLeft: "-1px",
           marginBottom: "30px",
