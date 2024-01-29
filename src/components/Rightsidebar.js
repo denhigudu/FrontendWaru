@@ -4,6 +4,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 import Button from '@mui/material/Button';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import IconButton from '@mui/material/IconButton';
 //import { FormatAlignCenter } from '@mui/icons-material';
 
 const rightsidebar = () => { 
@@ -49,13 +50,15 @@ const rightsidebar = () => {
             </div>
 
             {/* <div className='linea-menu'></div>  */}
-            <div>
+            <IconButton>
                 <SettingsIcon className='settings-icon'/>
                 <h4 className='ajustes'>Ajustes</h4>
-                
+            </IconButton>
+
+            <IconButton>
                 <LogoutIcon className='log-out'/>
                 <h4 className='cerrar-sesion'>Cerrar sesión</h4>
-            </div>
+            </IconButton>
         
         </div> 
         </div>

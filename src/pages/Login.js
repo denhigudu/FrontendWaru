@@ -201,16 +201,19 @@ export function FormularioLogin() {
           >
             Iniciar sesión
           </button>
+          {error && <p>{error}</p>}
           <br></br>
           <br></br>
         </form>
       </div>
+      <br></br>
+      <br></br>
 
       {/* Eliminar este button de brincar cuando funcione react con backend */}
       <form onClick={brincar}>
         <button>Ir a Dashboard</button>
       </form>
-      {error && <p>{error}</p>}
+      
     </section>
     </div>
   );

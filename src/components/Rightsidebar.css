@@ -47,7 +47,7 @@
   position: absolute;
   top: 90%; 
   left: 84%; 
-  transform: translate(80%, -45%); 
+  transform: translate(1080%, 1645%); 
   font-size: 2em;
  
 }
@@ -55,10 +55,11 @@
 .ajustes{
   position: absolute;
   text-align:center;
-  margin-top:  139.5%;
-  margin-left: 49%;
+  margin-top:  5350%;
+  margin-left: 2750%;
   color: #040B5E;
   font-family: 'Avenir', sans-serif;
+  font-size: medium;
   border-bottom: 1px solid #FF5C04;
   padding-bottom: 5px;
   width: 145px;
@@ -70,17 +71,19 @@
   position: absolute;
   top: 96.5%; 
   left: 85%; 
-  transform: translate(80%, -45%); 
+  transform: translate(1025%, 1810%); 
   font-size: 2em; 
   
 }
 
 .cerrar-sesion{
   text-align:center;
-  top: 92%;
-  margin-left: 50%;
+  white-space: nowrap;
+  top: 2700%;
+  margin-left: 2440%;
   color: #040B5E;
   font-family: 'Avenir', sans-serif;
+  font-size: medium;
   /* position: fixed; */
   position: absolute;
   

@@ -103,7 +103,7 @@ function Dashboard() {
       <Rightsidebar/>
       <Middletopcont/>
       <MidBottomcont/>
-      <Footer/>
+      
     </div>
     
       <div className="perfil">

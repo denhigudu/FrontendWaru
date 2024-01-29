@@ -8,6 +8,7 @@ import CircleIcon from '@mui/icons-material/Circle';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import StoreIcon from '@mui/icons-material/Store';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import IconButton from '@mui/material/IconButton';
 import AddBusinessIcon from '@mui/icons-material/AddBusiness';
 import Button from '@mui/material/Button';
 import ariss from '../assets/ariss.jpeg';
@@ -35,28 +36,29 @@ const leftsidebar = () => {
 
           <div className='icon-container'> 
     
-            <div className='noticon-container'> <CircleNotificationsIcon className='noticon'/> 
-            </div> 
+            <IconButton className='noticon-container'> <CircleNotificationsIcon className='noticon'/> 
+            </IconButton> 
     
-            <div className='circleicon-container'> 
+            <IconButton className='circleicon-container'> 
               <CircleIcon className='circleicon'/> 
               <EditIcon className='editicon'/> 
-            </div> 
+            </IconButton> 
 
-            <div className='circleicon-container'> 
+            <IconButton className='circleicon-container'> 
               <CircleIcon className='circleicon'/> 
               <ChatBubbleIcon className='chaticon'/>
-            </div> 
+            </IconButton> 
 
           </div> 
 
         <div className='linea'></div> 
-        <br></br><br></br> 
+        
       
         <StoreIcon className='storeicon'/>
         <h3 className='mis-negocios'>Mis Negocios</h3>
 
         <div>
+          <div>
         <img 
             src={ariss} 
             alt='ejnegocio1'
@@ -68,11 +70,15 @@ const leftsidebar = () => {
                 right: '25%',
             }}
         />
-        <ArrowForwardIosIcon style={{ position: 'absolute', right: '10%', top: '58%', transform: 'translateY(-50%)' }}
+          </div>
+          <IconButton>
+        <ArrowForwardIosIcon style={{ position: 'absolute', right: '-800%', top: '230%', transform: 'translateY(270%)' }}
         />
+          </IconButton>
         </div>
 
         <div>
+          <div>
         <img 
             src={candy} 
             alt='ejnegocio1'
@@ -84,7 +90,10 @@ const leftsidebar = () => {
                 right: '25%',
             }}
         /> 
-        <ArrowForwardIosIcon style={{ position: 'absolute', right: '10%', top: '80%', transform: 'translateY(-50%)' }} />
+          </div>
+          <IconButton>
+        <ArrowForwardIosIcon style={{ position: 'absolute', right: '-800%', top: '80%', transform: 'translateY(850%)' }} />
+          </IconButton>
         </div>
         
 

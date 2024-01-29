@@ -1,15 +1,10 @@
 .footer {
-    background-color: #040B5E;
-    color: #fff;
-    text-align: center;
-    padding: 30px;
-    width: 95.8%; 
-    height: 50px;
-    position: relative;
-    bottom: 0;
-    margin-top: -630px;
-    z-index: 10; /* Añade un índice z alto para asegurar que esté sobre otros elementos */
-    
-  }
-  
- 
+  background-color: #040B5E;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  width: 100%; /* Utiliza el ancho completo */
+  position: fixed; /* Cambia a posición fija */
+  bottom: 0 !important; /* Coloca el footer en la parte inferior */
+  z-index: 10; /* Añade un índice z alto para asegurar que esté sobre otros elementos */
+}

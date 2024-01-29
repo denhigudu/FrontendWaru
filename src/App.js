@@ -1,11 +1,13 @@
 import React from "react";
 import IndexHeader from "./layouts/IndexHeader";
+import Footer from "./components/footer";
 import "./App.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FormularioSignUp from "./pages/SignUp";
 import homewarú from "./assets/homewarú.png";
 import waruinfo from "./assets/waruinfo.png";
+import nombre_waru from "./assets/nombre_waru.png";
 // Material UI
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
@@ -67,6 +69,18 @@ function App() {
         alt="waruinfo"
       />
 
+      <img
+        src={nombre_waru}
+        style={{
+          marginTop: "0",
+          width: "1448px",
+          height: "720px",
+          marginLeft: "-1px",
+          marginBottom: "30px",
+        }}
+        alt="waruinfo"
+      />
+
       {/* <form onSubmit={sign_in}>
         <Stack spacing={2} direction={"row-reverse"}>
           <Button
@@ -94,6 +108,8 @@ function App() {
       </form> */}
 
       {/* <FormularioSignUp/> */}
+
+      {/* <Footer/> */}
     
       {error && <p>{error}</p>}
     </div>
