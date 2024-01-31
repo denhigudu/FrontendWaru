@@ -28,7 +28,6 @@ function App() {
         }}
         alt="slogan warú"
       />
-
       <img
         src={waruinfo}
         style={{
