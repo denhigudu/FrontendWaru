@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 2.8%;
+  width: 100%;
+  padding: 1%;
 }
 
 .button {
@@ -8,4 +11,23 @@
   background-color: #ff5c04;
   text-shadow: 1px 1px grey;
   background: green;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+/* Media queries para hacer la aplicación responsive */
+
+@media only screen and (max-width: 600px) {
+  .App {
+    margin-top: 5%;
+  }
+
+  /* Puedes ajustar estos estilos según tus necesidades específicas para pantallas más pequeñas */
+  img {
+    margin-bottom: 5%;
+  }
 }
