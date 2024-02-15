@@ -12,7 +12,6 @@ function App() {
   const [error] = useState("");
 
   // FUNCIONES
-
   return (
     <div className="App">
       <IndexHeader />

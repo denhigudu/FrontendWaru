@@ -27,7 +27,7 @@ export function Login() {
         console.log("log In failed");
       }
     } catch (error) {
-      setError("Log in failed");
+      setError("no sirve");
     }
   };
 
