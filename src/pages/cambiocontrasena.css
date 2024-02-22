@@ -1,0 +1,35 @@
+.container {
+  display: inline-flex;
+  align-items: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ff5c04;
+  border-radius: 10px;
+  padding: 10px;
+}
+.div {
+  display: flex;
+  align-items: center;
+}
+.input {
+  margin-top: 10px;
+  width: 70%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Avenir, sans-serif;
+  color: #040b5e;
+}
+.button01 {
+  background-color: #ff5c04;
+  color: #ffff;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ffff;
+  width: 70%;
+  font-size: 16px;
+  font-family: Avenir, sans-serif;
+}

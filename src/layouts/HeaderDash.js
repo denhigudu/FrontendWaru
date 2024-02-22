@@ -8,9 +8,7 @@ function DashHeader() {
     return(
         <div 
         className="Header"
-        
         >
-    
             <ArrowBackIosNewIcon style={{ 
                 color: 'white',
                 position: 'absolute', 

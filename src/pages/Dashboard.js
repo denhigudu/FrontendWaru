@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./Dashboard.css"
 import HeaderDash from '../layouts/HeaderDash';
@@ -7,135 +7,56 @@ import Leftsidebar from '../components/Leftsidebar';
 import Rightsidebar from '../components/Rightsidebar';
 import Middletopcont from "../components/Middletopcont";
 import MidBottomcont from "../components/MidBottomcont";
+import { useNavigate } from "react-router-dom";
 
 
 function Dashboard() {
-  const navigate = useNavigate();
+  const Navigate = useNavigate();
   const [error, setError] = useState("");
-
-  const Notificaciones = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/notificaciones");
-    } catch (error) {
-      setError("Algo salio mal");
+  
+  const NotificationsPage = () =>{
+    try{
+      Navigate("/notificaciones");
+    } catch (error){
+      setError("something is wrong")
     }
   };
-
-  const EditarPerfil = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/editarPerfil");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
-
-  const mensajes = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/mensajes");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
-
-  const misNegocios = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/misnegocios");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
-
-  const Autodiagnostico = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/autodiagnostico");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
-
-  const nuevoNegocio = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/nuevoproyecto");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
-
-  const contratarServ = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/servicios");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
-
-  const ajustes = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/ajustes");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
-
-  const logOut = async (event) => {
-    event.preventDefault();
-    try {
-      navigate("/");
-    } catch (error) {
-      setError("Algo salio mal");
-    }
-  };
-
+const EditProfilePage = () => {
+  try {
+    Navigate("/editarPerfil");
+  } catch (error) {
+    setError("something is wrong");
+  }
+};
+const MessagesPage = () => {
+  try {
+    Navigate("/notificaciones");
+  } catch (error) {
+    setError("something is wrong");
+  }
+};
   return (
     <div>
-    <div>
+      <div>
       <HeaderDash/>
       <Leftsidebar/>
       <Rightsidebar/>
       <Middletopcont/>
       <MidBottomcont/>
-      
-    </div>
+      </div>
     
       <div className="perfil">
-        <form onClick={Notificaciones}>
+        <form onClick={NotificationsPage}>
           <button className="button">Ir a notificaciones</button>
         </form>
-        <form onClick={EditarPerfil}>
+        <form onClick={EditProfilePage}>
           <button className="button">Ir a editor de perfil</button>
         </form>
-        <form onClick={mensajes}>
+        <form onClick={MessagesPage}>
           <button className="button">Ver mensajes</button>
         </form>
       </div>
-      <form onClick={misNegocios}>
-        <button>Agregar otro negocio</button>
-      </form>
-      <form onClick={Autodiagnostico}>
-        <button>Ir a Autodiagnostico</button>
-      </form>
-      <form onClick={nuevoNegocio}>
-        <button>Nuevo proyecto</button>
-      </form>
-      <form onClick={contratarServ}>
-        <button>Contratar servicios</button>
-      </form>
-      <form onClick={ajustes}>
-        <button>Ajustes</button>
-      </form>
-      <form onClick={logOut}>
-        <button>Cerrar sesión</button>
-      </form>
-      {error && <p>{error}</p>}
-      
+    {error && <p>{error}</p>}
     </div>
   );
 }

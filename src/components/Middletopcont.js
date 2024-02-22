@@ -11,14 +11,9 @@ const Middletopcont = () => {
     <div>
         <div className='middlecont'>
         <div> 
-            
-            
             <h1 className='mis-diagnosticos'> Autodiágnósticos</h1>
             <DynamicFormIcon className='diaicon'/>
-
             <div className='lineadia'></div> 
-            
-
             <Button 
               variant="outlined"
               className="resultado1"

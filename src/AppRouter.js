@@ -12,6 +12,9 @@ import MisNegocios from "./pages/misNegocios";
 import NewBusiness from "./pages/newBusiness";
 import Servicios from "./pages/servicios";
 import Ajustes from "./pages/ajustes";
+import CorreoContrasena from "./pages/correoContrasena";
+import CambioContrasena from "./pages/cambioContrasena";
+import Proveedores from "./pages/proveedores";
 
 const AppRouter = () => {
   return (
@@ -29,6 +32,9 @@ const AppRouter = () => {
         <Route path="/newBusiness" element={<NewBusiness />} />
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/ajustes" element={<Ajustes />} />
+        <Route path="/correoContrasena" element={<CorreoContrasena />} />
+        <Route path="/cambioContrasena" element={<CambioContrasena />} />
+        <Route path="/proveedores" element={<Proveedores />} />
       </Routes>
     </Router>
   );

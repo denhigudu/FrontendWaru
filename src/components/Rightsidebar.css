@@ -1,58 +1,55 @@
-.right-borde-bar{
+.right-borde-bar {
   display: flex;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
   justify-content: flex-start;
   border-width: 2px;
-  border-style: solid; 
-  border-color: #FF5C04; 
+  border-style: solid;
+  border-color: #ff5c04;
   border-radius: 10px;
-  padding:10px;
+  padding: 10px;
   width: 300px;
-  height: 680px;
+  height: 750px;
   position: relative;
-  top: -689px;
+  top: -755px;
   left: 76%;
 }
 
 @media screen and (max-width: 600px) {
   .bordesbar {
     width: 100%;
-    max-width: none; 
-    right: 0; 
+    max-width: none;
+    right: 0;
   }
 }
 
-.menu{
-  border-bottom: 1px solid #FF5C04;
+.menu {
+  border-bottom: 1px solid #ff5c04;
   text-align: center;
   padding-bottom: 10px;
   margin-left: 70px;
   width: 170px;
-  color: #040B5E;
-  font-family: Avenir, sans-serif;  
+  color: #040b5e;
+  font-family: Avenir, sans-serif;
 }
 
-.linea-menu{
+.linea-menu {
   width: 135%;
   height: 2px;
-  background-color:#FF5C04;
+  background-color: #ff5c04;
   margin-top: 100%;
-  margin-left: -28px; 
+  margin-left: -28px;
 }
 
-.settings-icon{
-  position: absolute; 
-  color:#FF5C04;
+.settings-icon {
   position: absolute;
   top: 90%; 
   left: 84%; 
   transform: translate(1080%, 1645%); 
   font-size: 2em;
- 
 }
 
-.ajustes{
+.ajustes {
   position: absolute;
   text-align:center;
   margin-top:  5350%;
@@ -65,9 +62,7 @@
   width: 145px;
 }
 
-.log-out{
-  position: absolute; 
-  color:#FF5C04;
+.log-out {
   position: absolute;
   top: 96.5%; 
   left: 85%; 
@@ -86,31 +81,30 @@
   font-size: medium;
   /* position: fixed; */
   position: absolute;
-  
 }
 
-.proveedores{
+.proveedores {
   border-color: #ff5c04 !important;
-  color: #040B5E !important;
+  color: #040b5e !important;
   width: 280px;
   margin-right: 10px;
   margin-left: 10px;
   border-radius: 15px !important;
 }
 
-.provforward-arrow{
+.provforward-arrow {
   margin-left: 110px;
 }
 
-.servicios{ 
-  border-color:#ff5c04 !important;
-  color: #040B5E !important;
+.servicios {
+  border-color: #ff5c04 !important;
+  color: #040b5e !important;
   width: 280px;
   margin-right: 10px;
   margin-left: 10px;
   border-radius: 15px !important;
 }
 
-.serforward-arrow{
+.serforward-arrow {
   margin-left: 145px;
 }
