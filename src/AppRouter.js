@@ -9,7 +9,7 @@ import Notificaciones from "./pages/notificaciones";
 import EditarPerfil from "./pages/editarPerfil";
 import Mensajes from "./pages/mensajes";
 import MisNegocios from "./pages/misNegocios";
-import NuevoProyecto from "./pages/nuevoProyecto";
+import NewBusiness from "./pages/newBusiness";
 import Servicios from "./pages/servicios";
 import Ajustes from "./pages/ajustes";
 
@@ -26,7 +26,7 @@ const AppRouter = () => {
         <Route path="/editarPerfil" element={<EditarPerfil />} />
         <Route path="/mensajes" element={<Mensajes />} />
         <Route path="/misnegocios" element={<MisNegocios />} />
-        <Route path="/nuevoproyecto" element={<NuevoProyecto />} />
+        <Route path="/newBusiness" element={<NewBusiness />} />
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/ajustes" element={<Ajustes />} />
       </Routes>

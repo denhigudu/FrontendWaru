@@ -11,8 +11,6 @@ const MidBottomcont = () => {
     <div>
         <div className='midbotcont'>
         <div> 
-            
-            
             <h1 className='mis-pedidos'> Mis Pedidos</h1>
             <WorkIcon className='servicon' />
 
@@ -66,10 +64,6 @@ const MidBottomcont = () => {
                 //   marginLeft: '10%' }} />}
                 >Contratar nuevo servicio
             </Button>
-
-
-
-
         </div>
         </div>
     </div>

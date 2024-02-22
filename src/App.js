@@ -5,7 +5,7 @@ import "./App.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FormularioSignUp from "./pages/SignUp";
-import homewarú from "./assets/homewarú.png";
+import homewarú from "./assets/homewarú.png";
 import waruinfo from "./assets/waruinfo.png";
 import nombre_waru from "./assets/nombre_waru.png";
 // Material UI

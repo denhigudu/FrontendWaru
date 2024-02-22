@@ -1,42 +1,35 @@
-import React from 'react';
-import './Leftsidebar.css';
-import AddBusinessIcon from '@mui/icons-material/AddBusiness';
-import Button from '@mui/material/Button';
+import { React, useState } from "react";
+import "./Leftsidebar.css";
+import AddBusinessIcon from "@mui/icons-material/AddBusiness";
+import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
+import "../css/addBusiness-style.css";
 
-
-
-const AddBusinessButton = () => { 
-  return (
-    <div> 
-
-
-<Button 
-        variant="contained" 
-        style={{ 
-        backgroundColor: '#ff5c04', width: '200px', marginRight: '10px', marginLeft: '-95px',
-        fontFamily: 'Avenir, sans-serif', 
-        textTransform:'capitalize', 
-        fontSize: '12px', 
-        top: '92%',
-        textAlign: 'end',
-        position: 'absolute',
-        borderRadius: '15px',
-        }}
-        startIcon={<AddBusinessIcon style={{
-        position:'absolute',
-        top:'20%',
-        marginLeft: '-15px',
-        }}/>}
-        // endIcon={<ArrowForwardIosIcon style={{ 
-        //   position:'absolute', top:'20%', 
-        //   marginLeft: '10%' }} />}
-        >Agregar otro negocio
-        </Button>
-
-</div>
-
-); 
-    
+const AddBusinessButton = () => {
+  const Navigate = useNavigate();
+  const [error, setError] = useState("");
+  // function to change another page
+  const changeNewBusiness = async (event) => {
+    event.preventDefault();
+    try {
+      Navigate("/newBusiness");
+    } catch (error) {
+      setError("Algo salio mal");
+    }
   };
+  return (
+    <div>
+      <Button
+        onClick={changeNewBusiness}
+        variant="contained"
+        className="button-select"
+        startIcon={<AddBusinessIcon className="button-select__icon" />}
+      >
+        Agregar otro negocios
+      </Button>
+      {error && <p>{error}</p>}
+    </div>
+  );
+};
 
-  export default AddBusinessButton;
+export default AddBusinessButton;
