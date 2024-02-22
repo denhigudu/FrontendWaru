@@ -6,13 +6,10 @@ import Homewaru from "./assets/homewarú.png";
 import waruinfo from "./assets/waruinfo.png";
 import nombre_waru from "./assets/nombre_waru.png";
 // Material UI
-
 function App() {
   // VARIABLES
   const [error] = useState("");
-
   // FUNCIONES
-
   return (
     <div className="App">
       <IndexHeader />
@@ -28,7 +25,6 @@ function App() {
         }}
         alt="slogan warú"
       />
-
       <img
         src={waruinfo}
         style={{

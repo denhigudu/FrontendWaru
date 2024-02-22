@@ -1,0 +1,43 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #0073b7;
+}
+/* Estilos para el contenido principal */
+main {
+  padding: 1rem;
+}
+
+section {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+/* Estilos para el formulario */
+.formulario form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.formulario label {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
