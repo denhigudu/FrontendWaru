@@ -51,8 +51,8 @@ export function FormularioLogin() {
 
   return (
     <div className="App">
+      <Header />
       <section>
-        <Header />
         <br />
         <br />
         <div
@@ -104,8 +104,8 @@ export function FormularioLogin() {
             <br />
           </form>
         </div>
-        <br></br>
-        <br></br>
+        <br />
+        <br />
         {/* erased this button when the project needs to be copiled in DemoVersion */}
         <form onClick={brincar}>
           <button>Ir a Dashboard</button>
