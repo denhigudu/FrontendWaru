@@ -34,6 +34,16 @@ function Dashboard() {
       setError("something is wrong");
     }
   };
+
+  const ServiceHiringPage = () => {
+    try {
+      Navigate("/ServiceHiring");
+    } catch (error) {
+      setError("something is wrong");
+    }
+  };
+
+
   return (
     // contenedor1
     <div className="*">
@@ -58,6 +68,9 @@ function Dashboard() {
         </form>
         <form onClick={MessagesPage}>
           <button className="button">Ver mensajes</button>
+        </form>
+        <form onClick={ServiceHiringPage}>
+          <button className="button">Contratar Servicios</button>
         </form>
       </div>
       {error && <p>{error}</p>}
