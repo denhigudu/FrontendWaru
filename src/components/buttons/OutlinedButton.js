@@ -6,25 +6,18 @@ import '../buttons/buttons.css';
 
 const OutlinedButton = ({ text, ...props }) => { 
   return (
-    <div className="outlined-button-container">
-        
+    <div className="outlined-button-container"> 
         <Button 
             variant="outlined"
             className="outlined-button"
-            endIcon={<ArrowForwardIosIcon className="forward-arrow" />}
+            endIcon={<ArrowForwardIosIcon className="forward-arrow" 
+            />}
             {...props}
         >
             {text}  
         </Button>
-     
-          
-
-    
     </div>
-
-    
     ); 
-    
   };
 
   export default OutlinedButton;

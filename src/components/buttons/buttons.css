@@ -1,0 +1,41 @@
+.outlined-button-container .outlined-button{
+    border: 1px solid #FF5C04; 
+    color: #040B5E;
+    font-family: 'Avenir', sans-serif;
+    width: 100%; 
+    margin: 0;
+    padding: 1%; 
+    border-radius: 2em;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-transform: capitalize;
+    margin-bottom: 10%;
+}
+
+.forward-arrow{
+    display:inline-flexbox;
+    align-items: end;
+    color: #040B5E; 
+}
+
+.contained-button-container .contained-button{
+    display: flex;
+    align-items:center;
+    color: #ffff;
+    background-color: #FF5C04;
+    font-family: 'Avenir', sans-serif;
+    width: 100%; 
+    margin: 0;
+    padding: 1%; 
+    border-radius: 2em;
+    justify-content:center;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-transform: capitalize;
+    margin-top: 0%;
+}
+
+.contained-button-container .contained-button:hover {
+    background-color: #040B5E;
+}
