@@ -1,6 +1,12 @@
-.index-header{
-    width: 100%; 
-    height: 60px; 
+.index-header {
+    width: calc(100% - 200px); /* Ancho total menos el espacio a la derecha */
+    height: 60px;
     background-color: #ff5c04;
     position: fixed;
-}
+    top: 0;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1001;    
+    padding-right: 10%;
+  }
+
