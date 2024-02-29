@@ -19,7 +19,7 @@ function Dashboard() {
         <Rightsidebar />
         <Middletopcont />
         <MidBottomcont />
-        <Footer />
+        {/* <Footer /> */}
       </div>
       {error && <p>{error}</p>}
     </div>

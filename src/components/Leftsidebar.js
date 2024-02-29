@@ -47,10 +47,10 @@ const Leftsidebar = () => {
     }
   };
 
-  const NewProject = async (event) => {
+  const newBusiness = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/newProject");
+      Navigate("/newBusiness");
     } catch (error) {
       setError("something is wrong");
     }
@@ -143,7 +143,7 @@ const Leftsidebar = () => {
             }}
           />
         </div>
-        <button className="button" onClick={NewProject}>
+        <button className="button" onClick={newBusiness}>
           <AddBusinessButton />
         </button>
       </div>

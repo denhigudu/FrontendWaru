@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* html{
+    font-size: 62.5%
+} */
+.service-border {
+  margin: 20rem;
+  margin-top: 5rem;
+  margin-left: 30rem;
+  width: 35%;
+  display: flex;
+  min-width: none;
+  align-items: center;
+  border-width: 2%;
+  border-style: solid;
+  border-color: #ff5c04;
+  border-radius: 1em;
+  padding: 2em;
+}
+form{
+    text-align: center;
+}
+.title {
+  align-items: center;
+  border-bottom: 2% solid #ff5c04;
+  padding-bottom: 10px;
+  margin-left: -7px;
+  width: 150%;
+  color: #040b5e;
+  font-family: Avenir, sans-serif;
+  white-space: nowrap;
+}
+.input-business-name {
+  display: flex;
+  margin-top: 4%;
+  width: 180%;
+  padding: 5%;
+  border-radius: 1em;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: Avenir, sans-serif;
+  color: #040b5e;
+}
+.input-features {
+  margin-top: 4%;
+  width: 180%;
+  padding: 20%;
+  border-radius: 1em;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: Avenir, sans-serif;
+  color: #040b5e;
+}
+.subtitle {
+  margin-bottom: 2em;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: Avenir, sans-serif;
+  color: #040b5e;
+  font-size: 1em;
+}
+.buttonService{
+    width: 150%;
+}

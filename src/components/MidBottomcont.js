@@ -4,8 +4,19 @@ import Button from "@mui/material/Button";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import WorkIcon from "@mui/icons-material/Work";
 import HandshakeIcon from "@mui/icons-material/Handshake";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const MidBottomcont = () => {
+  const Navigate = useNavigate();
+  const [error, setError] = useState("");
+  const serviceHiring = ()=>{
+    try{
+      Navigate("/ServiceHiring")
+    } catch (error){
+      setError("somethins is wrong");
+    }
+  }
   return (
     <div>
       <div className="midbotcont">
@@ -39,6 +50,7 @@ const MidBottomcont = () => {
           </Button>
           <br></br> <br></br>
           <Button
+            onClick={serviceHiring}
             variant="contained"
             style={{
               backgroundColor: "#ff5c04",

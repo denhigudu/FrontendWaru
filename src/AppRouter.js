@@ -9,12 +9,13 @@ import Notification from "./pages/notification";
 import EditProfile from "./pages/editProfile";
 import Messages from "./pages/messages";
 import MyBusiness from "./pages/myBusiness";
-import NewProject from "./pages/newProject";
+import NewBusiness from "./pages/newBusiness";
 import Services from "./pages/services";
 import Configurations from "./pages/Configurations";
 import MailPassword from "./pages/mailPassword";
 import NewPassword from "./pages/newPassword";
 import Suppliers from "./pages/suppliers";
+import ServiceHiring from "./pages/ServiceHiring";
 
 const AppRouter = () => {
   return (
@@ -29,12 +30,13 @@ const AppRouter = () => {
         <Route path="/editProfile" element={<EditProfile />} />
         <Route path="/messages" element={<Messages />} />
         <Route path="/myBusiness" element={<MyBusiness />} />
-        <Route path="/newProject" element={<NewProject />} />
+        <Route path="/newBusiness" element={<NewBusiness />} />
         <Route path="/services" element={<Services />} />
         <Route path="/configurations" element={<Configurations />} />
         <Route path="/mailPassword" element={<MailPassword />} />
         <Route path="/newPassword" element={<NewPassword />} />
         <Route path="/suppliers" element={<Suppliers />} />
+        <Route path="/ServiceHiring" element={<ServiceHiring />} />
       </Routes>
     </Router>
   );
