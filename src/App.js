@@ -21,32 +21,36 @@ function App() {
         src={homewaru}
         style={{
           marginTop: "2.8%",
-          width: "1440px",
-          height: "475px",
-          marginLeft: "-1px",
-          marginBottom: "30px",
+          width: "100%",
+          height: "50%",
+          marginLeft: "0%",
+          marginBottom: "3%",
+          
         }}
         alt="slogan warú"
       />
+
       <img
         src={waruinfo}
         style={{
           marginTop: "0",
-          width: "1248px",
-          height: "720px",
-          marginLeft: "-1px",
-          marginBottom: "30px",
+          width: "100%",
+          height: "70%",
+          marginLeft: "0",
+          marginBottom: "3%",
+          
         }}
         alt="waruinfo"
       />
+
       <img
         src={nombre_waru}
         style={{
           marginTop: "0",
-          width: "1448px",
-          height: "720px",
-          marginLeft: "-1px",
-          marginBottom: "30px",
+          width: "100%",
+          height: "70%",
+          marginLeft: "0%",
+          marginBottom: "3%",
         }}
         alt="waruinfo"
       />
