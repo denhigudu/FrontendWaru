@@ -26,7 +26,7 @@ function NewPassword() {
       );
       if (response.data.success === true) {
         console.log(response.data);
-        navigate("/login");
+        navigate("/Login");
       } else {
         console.log(response.data);
         alert("no se pudo ingresar al sistema");

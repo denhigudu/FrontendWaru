@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+.App {
+  text-align: center;
+  flex-wrap: wrap;
+}
+.homewaru{
+  width: 95%;
+  height: 100%;
+}
+.waruinfo{
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin-top: 6rem;
+}
+.nameWaru{
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin-top: 6rem;
+}

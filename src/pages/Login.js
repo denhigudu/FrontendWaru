@@ -30,26 +30,23 @@ export function Login() {
       setError("no sirve");
     }
   };
-
-  // eliminar esta función verificando que funcione con backend
+  // Erased this function or commented when the team needs to make a DEMO
   const lostpassword = async (event) => {
     event.preventDefault();
     try {
-      navigate("/mailPassword");
+      navigate("/MailPassword");
     } catch (error) {
       setError("something is wrong");
     }
   };
-
-  // const brincar = async (event) => {
-  //   event.preventDefault();
-  //   try {
-  //     navigate("/Dashboard");
-  //   } catch (error) {
-  //     setError("Algo salio mal");
-  //   }
-  // };
-
+  const brincar = async (event) => {
+    event.preventDefault();
+    try {
+      navigate("/Dashboard");
+    } catch (error) {
+      setError("Algo salio mal");
+    }
+  };
   return (
     <div className="App">
       <section>
@@ -105,10 +102,9 @@ export function Login() {
             <br />
           </form>
         </div>
-
-        {/* <form onClick={brincar}>
+        <form onClick={brincar}>
           <button className="auxiliar2">Ir a Dashboard</button>
-        </form> */}
+        </form>
       </section>
       <Footer />
       {error && <p>{error}</p>}

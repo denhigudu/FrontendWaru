@@ -15,7 +15,7 @@ const Rightsidebar = () => {
   const services = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/services");
+      Navigate("/Services");
     } catch (error) {
       setError("Algo salio mal");
     }
@@ -24,7 +24,7 @@ const Rightsidebar = () => {
   const Suppliers = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/suppliers");
+      Navigate("/Suppliers");
     } catch (error) {
       setError("Algo salio mal");
     }
@@ -33,7 +33,7 @@ const Rightsidebar = () => {
   const Configurations = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/configurations");
+      Navigate("/Configurations");
     } catch (error) {
       setError("Algo salio mal");
     }

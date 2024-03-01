@@ -23,7 +23,7 @@ const Leftsidebar = () => {
   const EditProfile = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/editProfile");
+      Navigate("/EditProfile");
     } catch (error) {
       setError("something is wrong");
     }
@@ -32,7 +32,7 @@ const Leftsidebar = () => {
   const Notification = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/notification");
+      Navigate("/Notification");
     } catch (error) {
       setError("something is wrong");
     }
@@ -41,7 +41,7 @@ const Leftsidebar = () => {
   const Messages = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/messages");
+      Navigate("/Messages");
     } catch (error) {
       setError("something is wrong");
     }
@@ -50,7 +50,7 @@ const Leftsidebar = () => {
   const newBusiness = async (event) => {
     event.preventDefault();
     try {
-      Navigate("/newBusiness");
+      Navigate("/NewBusiness");
     } catch (error) {
       setError("something is wrong");
     }
