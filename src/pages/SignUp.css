@@ -1,61 +1,60 @@
-.borde{
-    display: inline-flex;
-    align-items:right !important;
-    border-width: 3px;
-    border-style: solid; 
-    border-color: #FF5C04; 
-    border-radius: 10px;
-    padding:10px;
-
+.borde {
+  display: inline-flex;
+  align-items: right !important;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ff5c04;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-.title{
-    border-bottom: 1px solid #FF5C04;
-    padding-bottom: 10px;
-    margin-left: -7px;
-    width: 200px;
-    color: #040B5E;
-    font-family: Avenir, sans-serif;                     
+.title {
+  /* border-bottom: 1px solid #FF5C04; */
+  padding-bottom: 10px;
+  margin-left: -7px;
+  width: 200px;
+  color: #040b5e;
+  font-family: Avenir, sans-serif;
 }
 
-.logo{
-    width: 250px;
-    height: 60px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-  }
-
-.user{
-    margin-bottom: 10px;
-    display: block;
-    font-family: 'Avenir', sans-serif;
-    color: #040B5E;
-    font-size: 20px;
+.logo {
+  width: 250px;
+  height: 60px;
+  margin-left: 50px;
+  margin-bottom: 30px;
 }
 
-.email{
-    margin-bottom: 10px;
-    display: block;
-    font-family: 'Avenir', sans-serif;
-    color: #040B5E;
-    font-size: 20px;
-}
-.password{
-    margin-bottom: 20px;
-    display: block;
-    font-family: 'Avenir', sans-serif;
-    color: #040B5E;
-    font-size: 20px;
+.user {
+  margin-bottom: 10px;
+  display: block;
+  font-family: "Avenir", sans-serif;
+  color: #040b5e;
+  font-size: 20px;
 }
 
-.input{
-    margin-top: 10px;
-    width: 70%;
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    font-size: 14px;
-    font-family: 'Avenir', sans-serif;
-    color: #040B5E;
-  }
+.email {
+  margin-bottom: 10px;
+  display: block;
+  font-family: "Avenir", sans-serif;
+  color: #040b5e;
+  font-size: 20px;
+}
+.password {
+  margin-bottom: 20px;
+  display: block;
+  font-family: "Avenir", sans-serif;
+  color: #040b5e;
+  font-size: 20px;
+}
+
+.input {
+  margin-top: 10px;
+  width: 70%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Avenir", sans-serif;
+  color: #040b5e;
+}
