@@ -19,11 +19,13 @@ function App() {
         className="homewaru"
         alt="slogan warú"
       />
+
       <img
         src={Waruinfo}
         className="waruinfo"
         alt="waruinfo"
       />
+
       <img
         src={Nombre_waru}
         className="nameWaru"
